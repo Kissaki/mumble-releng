@@ -67,6 +67,10 @@ function build {
 	cd ..
 }
 
+function testsuite {
+	cmd /c set TEMP=%LOCALAPPDATA%\\Temp \& set TMP=%LOCALAPPDATA%\\Temp \& python allTests.py
+}
+
 function install {
 	if [ "${MUMBLE_BUILD_CONFIGURATION}" == "Release" ]; then
 		OPTIMIZE_FLAG="OPTIMIZE=yes"
