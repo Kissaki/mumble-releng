@@ -5,18 +5,18 @@
 # <http://mumble.info/mumble-releng/LICENSE>.
 
 urls=(
-	"http://releng-distfiles.mumble.info/releng-distfiles/ice-3.6.3.tar.gz"
-	"https://github.com/zeroc-ice/ice/archive/v3.6.3.tar.gz#fn=ice-3.6.3.tar.gz"
+	"http://releng-distfiles.mumble.info/releng-distfiles/ice-3.7.0.tar.gz"
+	"https://github.com/zeroc-ice/ice/archive/v3.7.0.tar.gz#fn=ice-3.7.0.tar.gz"
 )
 
 digests=(
-	"sha1:9d18e11afa53669ac68c778f95ccb4ada6801967"
-	"sha256:82ff74e6d24d9fa396dbb4d9697dc183b17bc9c3f6f076fecdc05632be80a2dc"
+	"sha1:dc8eb281c8bcae55f5e4f3f907fda33fbcec1ebb"
+	"sha256:809fff14a88a7de1364c846cec771d0d12c72572914e6cc4fb0b2c1861c4a1ee"
 )
 
 function extract {
-	tar -zxf ice-3.6.3.tar.gz
-	cd ice-3.6.3
+	tar -zxf ice-3.7.0.tar.gz
+	cd ice-3.7.0
 }
 
 function prepare {
